@@ -1,9 +1,9 @@
-import { IsString, IsNumber } from 'class-validator';
+import { IsString, IsNumber, IsEmail} from 'class-validator';
 
 export class CreateClienteDto{
  @IsString() 
  nombre: string
 
- @IsString() 
+ @IsEmail() 
  email: string
 }
